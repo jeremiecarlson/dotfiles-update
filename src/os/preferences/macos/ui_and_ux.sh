@@ -20,8 +20,9 @@ execute "sudo defaults write /Library/Preferences/com.apple.loginwindow showInpu
 execute "defaults write com.apple.CrashReporter UseUNC 1" \
     "Make crash reports appear as notifications"
 
-execute "defaults write com.apple.LaunchServices LSQuarantine -bool false" \
-    "Disable 'Are you sure you want to open this application?' dialog"
+# Ran afoul of IT for this one ;)
+# execute "defaults write com.apple.LaunchServices LSQuarantine -bool false" \
+#     "Disable 'Are you sure you want to open this application?' dialog"
 
 execute "defaults write com.apple.print.PrintingPrefs 'Quit When Finished' -bool true" \
     "Automatically quit the printer app once the print jobs are completed"
